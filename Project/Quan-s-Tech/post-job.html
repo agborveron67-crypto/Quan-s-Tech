@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Quest - Post a New Job</title>
+    <link rel="stylesheet" href="post-job.css">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">
+            <h1>JOB QUEST</h1>
+        </div>
+        <nav class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="jobs.html">Jobs</a>
+            <a href="post-job.html" class="active">Post Job</a>
+        </nav>
+    </header>
+
+    <main class="form-container">
+        <div class="form-card">
+            <h2>Post a New Job</h2>
+            
+            <form id="postJobForm">
+                <div class="form-group">
+                    <label for="companyName">Company Name</label>
+                    <input type="text" id="companyName" placeholder="e.g. Tech Solutions Ltd">
+                </div>
+
+                <div class="form-group">
+                    <label for="jobTitle">Job Title</label>
+                    <input type="text" id="jobTitle" placeholder="e.g. Frontend Developer">
+                </div>
+
+                <div class="form-group">
+                     <label for="salary">Salary (FCFA/month)</label>
+                     <input type="text" id="salary" placeholder="e.g. 150,000"/>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" rows="5" placeholder="Enter detailed job roles, specifications, and baseline criteria structure..."></textarea>
+                </div>
+
+                <button type="submit" class="post-btn">post-job</button>
+            </form>
+        </div>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
