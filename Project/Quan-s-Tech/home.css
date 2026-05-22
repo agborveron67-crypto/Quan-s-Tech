@@ -193,3 +193,21 @@ footer p {
         flex-direction: column;
     }
 }
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+
+.logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+}
+
+.logo h1 {
+    color: white;
+    font-size: 28px;
+    margin: 0;
+}
