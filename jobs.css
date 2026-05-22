@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: whitesmoke;
+}
+
+.navbar {
+    background-color: darkblue;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+}
+
+.nav-links a {
+    color: whitesmoke;
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.nav-links a.active {
+    color: whitesmoke;
+}
+
+.listings-container {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+.search-section {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-input {
+    flex: 1;
+    padding: 12px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.search-btn {
+    background-color: darkblue;
+    color: whitesmoke;
+    border: none;
+    padding: 0 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.job-card {
+    background-color: white;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.job-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.job-card h3 {
+    color: black;
+    margin-bottom: 5px;
+}
+
+.job-card .company {
+    font-weight: bold;
+    color: blue;
+}
+
+.job-card .location {
+    font-size: 14px;
+    color: black;
+    margin-bottom: 12px;
+}
+
+.job-card .summary {
+    font-size: 15px;
+    color: black;
+    margin-bottom: 20px;
+}
+
+.details-btn {
+    display: inline-block;
+    background-color: darkblue;
+    color: whitesmoke;
+    text-decoration: none;
+    padding: 8px 18px;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+@media (max-width: 768px) {
+    .search-section {
+        flex-direction: column;
+    }
+    .search-btn {
+        padding: 12px;
+    }
+}
